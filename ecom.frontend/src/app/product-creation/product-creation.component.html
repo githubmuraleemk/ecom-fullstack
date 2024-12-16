@@ -1,0 +1,54 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create Product </h3>
+    <br>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> Product Name</label>
+            <input type="text" class ="form-control form-control-sm" id = "product"
+                [(ngModel)] = "product.product" name = "product">
+        </div>
+    
+        <div class="form-group">
+            <label> Product Brand</label>
+            <input type="text" class ="form-control form-control-sm" id = "brand"
+                [(ngModel)] = "product.brand" name = "brand">
+        </div>
+
+        <div class="form-group">
+            <label> Model</label>
+            <input type="text" class ="form-control form-control-sm" id = "model"
+                [(ngModel)] = "product.model" name = "model">
+        </div>        
+    
+        <div class="form-group">
+            <label> Price</label>
+            <input type="text" class ="form-control form-control-sm" id = "price"
+                [(ngModel)] = "product.price" name = "price">
+        </div>
+
+        <div class="form-group">
+            <label> Created DateTime</label>
+            <input type="datetime-local" 
+                class ="form-control form-control-sm" 
+                id = "createdDateTime"
+                [(ngModel)] = "product.createdDateTime" 
+                name = "createdDateTime"
+                readonly>
+        </div>
+
+        <div class="form-group">
+            <label> Updated DateTime</label>
+            <input type="datetime-local" 
+                class ="form-control form-control-sm" 
+                id = "updatedDateTime"
+                [(ngModel)] = "product.updatedDateTime" 
+                name = "updatedDateTime"
+                readonly>
+        </div>
+        <br>
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
+

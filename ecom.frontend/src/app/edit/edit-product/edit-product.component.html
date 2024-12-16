@@ -1,0 +1,44 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update Product </h3>
+    <br>
+    <form (ngSubmit) = "onSubmit()">
+<div class="form-group row">
+    <label for="product" class="col-sm-2 col-form-label col-form-label-sm">Product Name</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control form-control-sm" id="product" 
+      [(ngModel)] = "product.product" name = "product">
+    </div>
+</div>
+<br>
+
+<div class="form-group row">
+    <label for="brand" class="col-sm-2 col-form-label col-form-label-sm">Brand Name</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control form-control-sm" id="brand" 
+      [(ngModel)] = "product.brand" name = "brand">
+    </div>
+</div>
+<br>
+
+<div class="form-group row">
+    <label for="model" class="col-sm-2 col-form-label col-form-label-sm">Model</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control form-control-sm" id="model" 
+        [(ngModel)] = "product.model" name = "model">
+    </div>
+</div>
+<br>
+
+<div class="form-group row">
+    <label for="price" class="col-sm-2 col-form-label col-form-label-sm">Price</label>
+    <div class="col-sm-5">
+      <input type="test" class="form-control form-control-sm" id="price" 
+      [(ngModel)] = "product.price" name = "price">
+    </div>
+</div>
+<br>
+<br>    
+        <button class = "btn btn-success" type ="submit">Update</button>
+    
+    </form>
+    </div> 
